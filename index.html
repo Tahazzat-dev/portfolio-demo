@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tahazzat - MERN Stack Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="/" class="logo">
+          <img
+            class="logo-dark"
+            src="./assets/signature-dark.svg"
+            alt="Site Logo"
+          />
+          <img
+            class="logo-light"
+            src="./assets/signature-light.svg"
+            alt="Site Logo"
+          />
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+          </button>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero-section">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Your Name</span>
+          </h1>
+          <h2 class="hero-subtitle">MERN Stack Developer</h2>
+          <p class="hero-tagline">
+            Building scalable, modern web applications with seamless user
+            experiences
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <a href="#projects" class="btn btn-secondary">View Projects</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-decoration"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="glass-card about-card">
+            <p class="about-text">
+              I'm a passionate MERN Stack Developer with a keen eye for creating
+              dynamic, responsive web applications. With expertise in MongoDB,
+              Express.js, React, and Node.js, I specialize in building
+              full-stack solutions that are both powerful and user-friendly.
+            </p>
+            <p class="about-text">
+              My approach focuses on writing clean, maintainable code while
+              delivering exceptional user experiences. I'm constantly learning
+              new technologies and best practices to stay at the forefront of
+              web development.
+            </p>
+            <p class="about-text">
+              Whether it's building a complex dashboard, developing RESTful
+              APIs, or creating stunning frontend interfaces, I bring dedication
+              and technical excellence to every project.
+            </p>
+            <a href="#" class="btn btn-outline download-cv">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="glass-card skill-category">
+            <h3 class="skill-category-title">Frontend</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">React.js</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-level">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML & CSS</span>
+                  <span class="skill-level">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Tailwind CSS</span>
+                  <span class="skill-level">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-category">
+            <h3 class="skill-category-title">Backend</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Node.js</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Express.js</span>
+                  <span class="skill-level">88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">RESTful APIs</span>
+                  <span class="skill-level">92%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 92%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Authentication</span>
+                  <span class="skill-level">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-category">
+            <h3 class="skill-category-title">Database</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MongoDB</span>
+                  <span class="skill-level">88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-level">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">PostgreSQL</span>
+                  <span class="skill-level">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-category">
+            <h3 class="skill-category-title">Tools & Others</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">WordPress</span>
+                  <span class="skill-level">82%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 82%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Docker</span>
+                  <span class="skill-level">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+                alt="E-commerce Platform"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">Live Demo</a>
+                  <a href="#" class="project-link">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-commerce Platform</h3>
+              <p class="project-description">
+                Full-stack e-commerce solution with cart functionality, payment
+                integration, and admin dashboard for inventory management.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Stripe</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+                alt="Analytics Dashboard"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">Live Demo</a>
+                  <a href="#" class="project-link">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Analytics Dashboard</h3>
+              <p class="project-description">
+                Real-time analytics dashboard with interactive charts, data
+                visualization, and comprehensive reporting features.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Express</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Chart.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=800&q=80"
+                alt="Social Media App"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">Live Demo</a>
+                  <a href="#" class="project-link">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Social Media App</h3>
+              <p class="project-description">
+                Feature-rich social networking platform with real-time
+                messaging, posts, likes, comments, and user authentication.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Socket.io</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+                alt="Task Management System"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">Live Demo</a>
+                  <a href="#" class="project-link">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Task Management System</h3>
+              <p class="project-description">
+                Collaborative project management tool with drag-and-drop boards,
+                team collaboration, and progress tracking.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Express</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Redux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item glass-card">
+            <div class="timeline-date">2023 - Present</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Senior MERN Stack Developer</h3>
+              <h4 class="timeline-company">Tech Solutions Inc.</h4>
+              <ul class="timeline-description">
+                <li>
+                  Led development of enterprise-level web applications serving
+                  100K+ users
+                </li>
+                <li>
+                  Architected and implemented RESTful APIs with 99.9% uptime
+                </li>
+                <li>Mentored junior developers and conducted code reviews</li>
+                <li>
+                  Optimized application performance resulting in 40% faster load
+                  times
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item glass-card">
+            <div class="timeline-date">2021 - 2023</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Full Stack Developer</h3>
+              <h4 class="timeline-company">Digital Agency Pro</h4>
+              <ul class="timeline-description">
+                <li>
+                  Developed custom web solutions for diverse client portfolio
+                </li>
+                <li>Integrated third-party APIs and payment gateways</li>
+                <li>
+                  Collaborated with designers to create pixel-perfect interfaces
+                </li>
+                <li>Maintained and updated legacy codebases</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item glass-card">
+            <div class="timeline-date">2019 - 2021</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Frontend Developer</h3>
+              <h4 class="timeline-company">StartUp Ventures</h4>
+              <ul class="timeline-description">
+                <li>Built responsive, mobile-first web applications</li>
+                <li>Implemented modern UI/UX designs with React</li>
+                <li>Collaborated in agile development environment</li>
+                <li>
+                  Participated in requirements gathering and sprint planning
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <h2 class="section-title">Services Offered</h2>
+        <div class="services-grid">
+          <div class="glass-card service-card">
+            <div class="service-icon">🌐</div>
+            <h3 class="service-title">Full Stack Web Development</h3>
+            <p class="service-description">
+              End-to-end web application development using MERN stack, from
+              concept to deployment with scalable architecture.
+            </p>
+          </div>
+
+          <div class="glass-card service-card">
+            <div class="service-icon">📊</div>
+            <h3 class="service-title">Dashboard Development</h3>
+            <p class="service-description">
+              Custom admin panels and analytics dashboards with real-time data
+              visualization and comprehensive reporting.
+            </p>
+          </div>
+
+          <div class="glass-card service-card">
+            <div class="service-icon">🔌</div>
+            <h3 class="service-title">API Development & Integration</h3>
+            <p class="service-description">
+              RESTful API design, development, and integration with third-party
+              services for seamless data exchange.
+            </p>
+          </div>
+
+          <div class="glass-card service-card">
+            <div class="service-icon">🎨</div>
+            <h3 class="service-title">WordPress Customization</h3>
+            <p class="service-description">
+              Custom theme development, plugin integration, and WordPress
+              optimization for enhanced performance.
+            </p>
+          </div>
+
+          <div class="glass-card service-card">
+            <div class="service-icon">📱</div>
+            <h3 class="service-title">Responsive Web Design</h3>
+            <p class="service-description">
+              Mobile-first, responsive designs that work flawlessly across all
+              devices and screen sizes.
+            </p>
+          </div>
+
+          <div class="glass-card service-card">
+            <div class="service-icon">🚀</div>
+            <h3 class="service-title">Performance Optimization</h3>
+            <p class="service-description">
+              Website speed optimization, code refactoring, and best practices
+              implementation for better performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="glass-card contact-card">
+              <div class="contact-icon">📧</div>
+              <h3 class="contact-method">Email</h3>
+              <a href="mailto:your.email@example.com" class="contact-link"
+                >your.email@example.com</a
+              >
+            </div>
+            <div class="glass-card contact-card">
+              <div class="contact-icon">💼</div>
+              <h3 class="contact-method">LinkedIn</h3>
+              <a
+                href="https://linkedin.com/in/yourprofile"
+                target="_blank"
+                class="contact-link"
+                >linkedin.com/in/yourprofile</a
+              >
+            </div>
+            <div class="glass-card contact-card">
+              <div class="contact-icon">💻</div>
+              <h3 class="contact-method">GitHub</h3>
+              <a
+                href="https://github.com/yourusername"
+                target="_blank"
+                class="contact-link"
+                >github.com/yourusername</a
+              >
+            </div>
+            <div class="glass-card contact-card">
+              <div class="contact-icon">💬</div>
+              <h3 class="contact-method">WhatsApp</h3>
+              <a
+                href="https://wa.me/1234567890"
+                target="_blank"
+                class="contact-link"
+                >+1 (234) 567-890</a
+              >
+            </div>
+          </div>
+
+          <div class="glass-card contact-form-card">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
