@@ -174,19 +174,19 @@ cards.forEach(card => {
 // ===== Project Card Image Lazy Loading =====
 const projectImages = document.querySelectorAll('.project-image img');
 
-const imageObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const img = entry.target;
-            img.style.opacity = '0';
-            img.addEventListener('load', () => {
-                img.style.transition = 'opacity 0.5s ease';
-                img.style.opacity = '1';
-            });
-            imageObserver.unobserve(img);
-        }
-    });
-});
+// const imageObserver = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             const img = entry.target;
+//             img.style.opacity = '0';
+//             img.addEventListener('load', () => {
+//                 img.style.transition = 'opacity 0.5s ease';
+//                 img.style.opacity = '1';
+//             });
+//             imageObserver.unobserve(img);
+//         }
+//     });
+// });
 
 projectImages.forEach(img => imageObserver.observe(img));
 
