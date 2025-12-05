@@ -400,6 +400,7 @@ body {
 }
 
 .projects-section .container,
+.contact-section .container,
 .skills-section .container {
   max-width: 1200px;
   width: 100%;
